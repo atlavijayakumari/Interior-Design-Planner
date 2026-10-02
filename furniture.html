@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InteriorPlan - Furniture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>Interior<span>Plan</span></h2>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="furniture.html">Furniture</a>
+            <a href="design.html">My Design</a>
+        </div>
+    </nav>
+</header>
+
+<section class="furniture-section">
+    <h2 class="title">Choose Furniture</h2>
+
+    <div id="selected-room"></div>
+
+    <div class="furniture-container">
+
+        <!-- ================= LIVING ROOM ================= -->
+        <div class="furniture-card" data-room="Living Room">
+            <div class="furniture-icon">🛋️</div>
+            <h3>Modern Sofa</h3>
+            <p>Price: ₹25,000</p>
+            <button onclick="addItem('Modern Sofa', 25000)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Living Room">
+            <div class="furniture-icon">☕</div>
+            <h3>Coffee Table</h3>
+            <p>Price: ₹8,000</p>
+            <button onclick="addItem('Coffee Table', 8000)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Living Room">
+            <div class="furniture-icon">📺</div>
+            <h3>TV Cabinet</h3>
+            <p>Price: ₹15,000</p>
+            <button onclick="addItem('TV Cabinet', 15000)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Living Room">
+            <div class="furniture-icon">🪑</div>
+            <h3>Armchair</h3>
+            <p>Price: ₹12,000</p>
+            <button onclick="addItem('Armchair', 12000)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Living Room">
+            <div class="furniture-icon">📚</div>
+            <h3>Bookshelf</h3>
+            <p>Price: ₹9,500</p>
+            <button onclick="addItem('Bookshelf', 9500)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Living Room">
+            <div class="furniture-icon">💡</div>
+            <h3>Floor Lamp</h3>
+            <p>Price: ₹3,200</p>
+            <button onclick="addItem('Floor Lamp', 3200)">Add to Design</button>
+        </div>
+
+
+        <!-- ================= BEDROOM ================= -->
+        <div class="furniture-card" data-room="Bedroom">
+            <div class="furniture-icon">🛏️</div>
+            <h3>King Size Bed</h3>
+            <p>Price: ₹35,000</p>
+            <button onclick="addItem('King Size Bed', 35000)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Bedroom">
+            <div class="furniture-icon">🚪</div>
+            <h3>Wardrobe</h3>
+            <p>Price: ₹28,000</p>
+            <button onclick="addItem('Wardrobe', 28000)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Bedroom">
+            <div class="furniture-icon">🪑</div>
+            <h3>Nightstand</h3>
+            <p>Price: ₹4,500</p>
+            <button onclick="addItem('Nightstand', 4500)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Bedroom">
+            <div class="furniture-icon">🪞</div>
+            <h3>Dressing Table</h3>
+            <p>Price: ₹16,500</p>
+            <button onclick="addItem('Dressing Table', 16500)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Bedroom">
+            <div class="furniture-icon">💻</div>
+            <h3>Study Desk</h3>
+            <p>Price: ₹11,000</p>
+            <button onclick="addItem('Study Desk', 11000)">Add to Design</button>
+        </div>
+
+
+        <!-- ================= POOJA ROOM ================= -->
+        <div class="furniture-card" data-room="Pooja Room">
+        <div class="furniture-icon">🛕</div>
+        <h3>Teak Wooden Mandir</h3>
+        <p>Price: ₹18,500</p>
+        <button onclick="addItem('Teak Wooden Mandir', 18500)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Pooja Room">
+        <div class="furniture-icon">🪔</div>
+        <h3>Brass Diya Stand</h3>
+        <p>Price: ₹2,400</p>
+        <button onclick="addItem('Brass Diya Stand', 2400)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Pooja Room">
+        <div class="furniture-icon">🔔</div>
+        <h3>Hanging Brass Bell</h3>
+        <p>Price: ₹1,800</p>
+        <button onclick="addItem('Hanging Brass Bell', 1800)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Pooja Room">
+        <div class="furniture-icon">🧘</div>
+        <h3>Pooja Asan Mat</h3>
+        <p>Price: ₹850</p>
+        <button onclick="addItem('Pooja Asan Mat', 850)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Pooja Room">
+        <div class="furniture-icon">🗄️</div>
+        <h3>Pooja Unit Storage Cabinet</h3>
+        <p>Price: ₹12,000</p>
+        <button onclick="addItem('Pooja Unit Storage Cabinet', 12000)">Add to Design</button>
+        </div>
+
+
+        <!-- ================= KITCHEN ================= -->
+        <div class="furniture-card" data-room="Kitchen">
+            <div class="furniture-icon">🍽️</div>
+            <h3>Dining Table Set</h3>
+            <p>Price: ₹22,000</p>
+            <button onclick="addItem('Dining Table Set', 22000)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Kitchen">
+            <div class="furniture-icon">🗄️</div>
+            <h3>Kitchen Cabinet</h3>
+            <p>Price: ₹30,000</p>
+            <button onclick="addItem('Kitchen Cabinet', 30000)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Kitchen">
+            <div class="furniture-icon">🍸</div>
+            <h3>Bar Stool Set</h3>
+            <p>Price: ₹6,500</p>
+            <button onclick="addItem('Bar Stool Set', 6500)">Add to Design</button>
+        </div>
+
+        <div class="furniture-card" data-room="Kitchen">
+            <div class="furniture-icon">🧺</div>
+            <h3>Kitchen Pantry Rack</h3>
+            <p>Price: ₹7,800</p>
+            <button onclick="addItem('Kitchen Pantry Rack', 7800)">Add to Design</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 InteriorPlan</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

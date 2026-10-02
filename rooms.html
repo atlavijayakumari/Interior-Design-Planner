@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InteriorPlan - Rooms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <h2>Interior<span>Plan</span></h2>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="rooms.html">Rooms</a>
+            <a href="furniture.html">Furniture</a>
+            <a href="design.html">My Design</a>
+        </div>
+    </nav>
+</header>
+
+<section class="rooms-section">
+    <h2 class="title">Choose Your Room</h2>
+
+    <div class="room-container">
+
+        <!-- Living Room -->
+        <div class="room-card">
+            <div class="room-icon">🛋️</div>
+            <h3>Living Room</h3>
+            <p>A comfortable space for relaxing and entertaining guests.</p>
+            <button onclick="chooseRoom('Living Room')">Design Room</button>
+        </div>
+
+        <!-- Bedroom -->
+        <div class="room-card">
+            <div class="room-icon">🛏️</div>
+            <h3>Bedroom</h3>
+            <p>Create a peaceful and cozy space for relaxation.</p>
+            <button onclick="chooseRoom('Bedroom')">Design Room</button>
+        </div>
+
+        <!-- Kitchen -->
+        <div class="room-card">
+            <div class="room-icon">🍳</div>
+            <h3>Kitchen</h3>
+            <p>Plan a modern and functional kitchen.</p>
+            <button onclick="chooseRoom('Kitchen')">Design Room</button>
+        </div>
+
+        <!-- Pooja Room -->
+        <div class="room-card">
+            <div class="room-icon">🛕</div>
+            <h3>Pooja Room</h3>
+            <p>Design a serene and sacred space for daily prayers and peace.</p>
+            <button onclick="chooseRoom('Pooja Room')">Design Room</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 InteriorPlan</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
